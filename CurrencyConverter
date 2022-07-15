@@ -1,0 +1,98 @@
+package CurrencyConverter;
+
+import java.util.Scanner;
+
+public class Currency 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Choose one option from following:");
+		System.out.println(" 1) INR to USD ");
+		System.out.println(" 1) INR to AUD");
+		System.out.println(" 1) INR to CAD ");
+		System.out.println(" 1) INR to EUR ");
+		System.out.println(" 1) INR to NPR ");
+		int exchange = sc.nextInt();
+		
+		switch (exchange)
+		{
+		case 1 :
+		{
+			System.out.println("Enter value in INR: ");
+			double INR = sc.nextDouble();
+			if (INR >= 0)
+			{
+				System.out.println(INR + "INR is " + INR*0.013+ " USD" );
+			}
+			else 
+			{
+				System.out.println("Enter valid value...");
+			}
+			break;
+		}
+		
+		case 2 :
+		{
+			System.out.println("Enter value in INR: ");
+			double INR = sc.nextDouble();
+			if (INR >= 0)
+			{
+				System.out.println(INR + "INR is " + INR*0.018+ " AUD" );
+			}
+			else 
+			{
+				System.out.println("Enter valid value...");
+			}
+			break;
+		}
+		case 3 :
+		{
+			System.out.println("Enter value in INR: ");
+			double INR = sc.nextDouble();
+			if (INR >= 0)
+			{
+				System.out.println(INR + "INR is " + INR*0.016+ " CAD" );
+			}
+			else 
+			{
+				System.out.println("Enter valid value...");
+			}
+			break;
+		}
+		
+		case 4 :
+		{
+			System.out.println("Enter value in INR: ");
+			double INR = sc.nextDouble();
+			if (INR >= 0)
+			{
+				System.out.println(INR + "INR is " + INR*0.012+ " EUR" );
+			}
+			else 
+			{
+				System.out.println("Enter valid value...");
+			}
+			break;
+		}
+		
+		case 5 :
+		{
+			System.out.println("Enter value in INR: ");
+			double INR = sc.nextDouble();
+			if (INR >= 0)
+			{
+				System.out.println(INR + "INR is " + INR*1.16+ " NPR" );
+			}
+			else 
+			{
+				System.out.println("Enter valid value...");
+			}
+			break;
+		}
+		
+		}
+		
+	}
+
+}
